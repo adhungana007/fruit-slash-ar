@@ -18,22 +18,19 @@
         margin-top: 40px;
         font-size: 42px;
     }
-    a.button {
-        display: inline-block;
-        margin: 20px;
-        padding: 12px 25px;
-        background: #00ff99;
-        border-radius: 10px;
-        color: black;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 20px;
-    }
     img {
         margin-top: 20px;
         width: 90%;
         max-width: 600px;
         border-radius: 10px;
+    }
+    p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+    hr {
+        margin: 40px 0;
+        opacity: 0.3;
     }
 </style>
 </head>
@@ -42,26 +39,19 @@
 
 <h1>🍉 Fruit Slice AR</h1>
 
-<p>Scan the poster below or click the button to launch the AR game!</p>
+<p>Scan the poster below to launch the AR game.</p>
 
-<!-- 🔥 Correct AR Link + Correct QR Embed -->
-<a class="button" href="https://apps.8thwall.com/mqpvn" target="_blank">
-    ▶ Launch AR Experience
-</a>
+<!-- ⭐ THIS EMBEDS 8TH WALL QR + LINK ICON AUTOMATICALLY ⭐ -->
+<a data-8code="mqpvn"></a>
+<script src="//cdn.8thwall.com/web/share/embed8.js"></script>
 
-<!-- 8th Wall QR Code Embed -->
-<div style="margin-top:20px;">
-    <a data-8code="mqpvn"></a>
-    <script src="//cdn.8thwall.com/web/share/embed8.js"></script>
-</div>
-
-<hr style="margin:40px 0; opacity:0.3;">
+<hr>
 
 <h2>🎯 Game Poster</h2>
 
 <p>Point your phone camera at this poster to start the AR game.</p>
 
-<!-- 🎉 Poster loads correctly from GitHub -->
+<!-- ⭐ YOUR POSTER IMAGE (uploaded as poster.jpg) -->
 <img src="poster.jpg" alt="Fruit Slice AR Poster">
 
 </body>
