@@ -1,27 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Fruit Slice AR</title>
-  <meta charset="utf-8">
-  <style>
-    body { background:#111; color:white; text-align:center; font-family:Arial; }
-    img { margin-top:20px; border-radius:10px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fruit Slice AR</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin-top: 40px;
+        font-size: 42px;
+    }
+    a.button {
+        display: inline-block;
+        margin: 20px;
+        padding: 12px 25px;
+        background: #00ff99;
+        border-radius: 10px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    img {
+        margin-top: 20px;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+</style>
 </head>
+
 <body>
 
-  <h1>Fruit Slice AR</h1>
+<h1>🍉 Fruit Slice AR</h1>
 
-  <p>Scan the poster below to launch the AR game!</p>
+<p>Scan the poster below or click the button to launch the AR game!</p>
 
-  <!-- POSTER IMAGE -->
-  <img src="poster.jpg" alt="Fruit Slice AR Poster" width="350">
+<!-- Your 8th Wall AR Link -->
+<a class="button" href="https://apps.8thwall.com/mqpvn">▶ Launch AR Experience</a>
 
-  <br><br>
+<hr style="margin:40px 0; opacity:0.3;">
 
-  <!-- 8th Wall embed link -->
-  <a data-8code="mqpvn"></a>
-  <script src="//cdn.8thwall.com/web/share/embed8.js"></script>
+<h2>🎯 Game Poster</h2>
+
+<p>Point your phone camera at this poster to start the AR game.</p>
+
+<!-- ✅ FIXED: This will correctly show your poster -->
+<img src="poster.jpg" alt="Fruit Slice AR Poster">
 
 </body>
 </html>
